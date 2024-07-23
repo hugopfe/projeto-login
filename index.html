@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="image">
+                <img src="images/bible.jpg" alt="bíblia">
+            </div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>Seja bem-vindo! Entre em sua conta com seu e-mail e senha.</p>
+                <form action="login.php" method="post">
+                    <div>
+                        <div id="wrapper">
+                            <label for="iemail"><span class="mdi mdi-account"></span></label>
+                            <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" autocomplete="email">
+                        </div>
+                    </div>
+                    <div>
+                        <div id="wrapper">
+                            <label for="iemail"><span class="mdi mdi-key-variant"></span></label>
+                            <input type="password" name="password" id="ipassword" placeholder="••••••••" minlength="8" autocomplete="current-password" required>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" value="Entrar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
