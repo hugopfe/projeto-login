@@ -42,14 +42,14 @@ main > #login {
 }
 
 main > #login > #image {
-    height: 30%;
+    height: 35%;
     background: var(--color1) url(../images/bible.jpg) center no-repeat;
     background-size: cover;
 }
 
 main > #login > #form {
     width: 100%;
-    height: 70%;
+    height: 65%;
     background-color: var(--color2);
 }
 
