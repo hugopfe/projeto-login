@@ -60,6 +60,7 @@ main > #login > #form h1, p, form > div {
 main > #login > #form > h1 {
     font: var(--font-title);
     color: var(--color4);
+    text-align: center;
 }
 
 
@@ -101,7 +102,7 @@ form > div > #field-wrapper > input:hover {
     border: 1px solid white;
 }
 
-form > div > input[type="submit"], form a#forgot-password {
+form > div > .button {
     margin: 5px 0px;
     font-weight: bold;
     font-size: 1.2em;
@@ -114,13 +115,21 @@ form > div > input[type="submit"], form a#forgot-password {
     border-radius: 3px;
 }
 
-form a#forgot-password {
+form a.button {
     text-align: center;
     line-height: 200%;
     text-decoration: none;
+    background-color: white;
+    color: var(--color4);
+    border: 2px solid var(--color1);
 }
 
-form > div > input[type="submit"]:hover, a#forgot-password:hover {
+form input.button:hover{
     cursor: pointer;
     filter: brightness(1.1);
+}
+
+form a.button:hover {
+    cursor: pointer;
+    background-color: rgb(233, 233, 233);
 }
