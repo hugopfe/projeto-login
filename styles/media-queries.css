@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--color4) 80%, var(--color3));
+    }
+    
+    main {
+        width: 90vw;
+    }
+
+    main > #login > #image {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    main > #login > #form {
+        float: left;
+        width: 60%;
+        height: 100%;
+        padding-top: 100px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        width: 900px;
+    }
+
+    main > #login > #image {
+        width: 50%;
+        float: right;
+    }
+
+    main > #login > #form {
+        width: 50%;
+        float: left;
+    }
+}
