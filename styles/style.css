@@ -81,10 +81,10 @@ form > div > #field-wrapper > input {
     padding: 5px;
     margin-left: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    width: 77%;
+    width: calc(100% - 65px);
     height: 60%;
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: #aaa;
     position: absolute;
     top: 50%;
@@ -121,6 +121,7 @@ form a.button {
     text-decoration: none;
     background-color: white;
     color: var(--color4);
+    box-sizing: border-box;
     border: 2px solid var(--color1);
 }
 
