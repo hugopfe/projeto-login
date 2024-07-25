@@ -63,7 +63,7 @@ main > #login > #form > h1 {
 }
 
 
-form > div > #wrapper {
+form > div > #field-wrapper {
     background-color: var(--color3);
     border-radius: 5px;
     height: 35px;
@@ -71,12 +71,12 @@ form > div > #wrapper {
     position: relative;
 }
 
-form > div > #wrapper > label {
+form > div > #field-wrapper > label {
     color: white;
     font-size: 2.2em;
 }
 
-form > div > #wrapper > input {
+form > div > #field-wrapper > input {
     padding: 5px;
     margin-left: 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -92,17 +92,16 @@ form > div > #wrapper > input {
     transition: border 200ms;
 }
 
-form > div > #wrapper > input:focus {
+form > div > #field-wrapper > input:focus {
     outline: none;
     background-color: white;
 }
 
-form > div > #wrapper > input:hover {
+form > div > #field-wrapper > input:hover {
     border: 1px solid white;
 }
 
-form > div > input[type="submit"], [type="reset"] {
-    padding: 5px;
+form > div > input[type="submit"], form a#forgot-password {
     margin: 5px 0px;
     font-weight: bold;
     font-size: 1.2em;
@@ -115,7 +114,13 @@ form > div > input[type="submit"], [type="reset"] {
     border-radius: 3px;
 }
 
-form > div > input[type="submit"]:hover, [type="reset"]:hover {
+form a#forgot-password {
+    text-align: center;
+    line-height: 200%;
+    text-decoration: none;
+}
+
+form > div > input[type="submit"]:hover, a#forgot-password:hover {
     cursor: pointer;
     filter: brightness(1.1);
 }

@@ -17,20 +17,20 @@
                 <p>Seja bem-vindo! Entre em sua conta com seu e-mail e senha.</p>
                 <form action="login.php" method="post">
                     <div>
-                        <div id="wrapper">
+                        <div id="field-wrapper">
                             <label for="iemail"><span class="mdi mdi-account"></span></label>
                             <input type="email" name="email" id="iemail" placeholder="exemplo@gmail.com" autocomplete="email" required>
                         </div>
                     </div>
                     <div>
-                        <div id="wrapper">
+                        <div id="field-wrapper">
                             <label for="iemail"><span class="mdi mdi-key-variant"></span></label>
                             <input type="password" name="password" id="ipassword" placeholder="••••••••" minlength="8" autocomplete="current-password" required>
                         </div>
                     </div>
                     <div>
                         <input type="submit" value="Entrar">
-                        <input type="reset" value="Esqueci a senha">
+                        <a id="forgot-password" href="forgot-password.js">Esqueci a senha</a>
                     </div>
                 </form>
             </div>
